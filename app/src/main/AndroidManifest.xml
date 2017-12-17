@@ -19,7 +19,7 @@
 
 
         <receiver android:name=".BootCompleteReceiver">
-            <intent-filter>
+            <intent-filter android:priority="100">
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
