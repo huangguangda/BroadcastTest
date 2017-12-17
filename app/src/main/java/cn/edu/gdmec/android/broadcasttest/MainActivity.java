@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent ( "cn.edu.gdmec.android.broadcasttest.MY_BROADCAST" );
+                sendOrderedBroadcast ( intent, null );
                 sendBroadcast ( intent );
             }
         } );
